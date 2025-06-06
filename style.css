@@ -1,0 +1,137 @@
+body {
+    font-family: 'Noto Sans Lao', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d40; /* Dark Teal */
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header h2 {
+    margin-top: 5px;
+    font-size: 1.5em;
+    color: #b2dfdb; /* Lighter teal */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00695c; /* Medium Teal */
+    flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #004d40;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #004d40;
+    border-bottom: 3px solid #26a69a; /* Light Teal accent */
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h3 {
+    color: #26a69a;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+p, li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #004d40;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header h2 {
+        font-size: 1.2em;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+        width: 90%;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    p, li {
+        font-size: 1em;
+    }
+}
